@@ -1,0 +1,18 @@
+i added actully good wall running may do some minor adjustments in the future with jump buffers. 
+
+the "ball" is now visable
+
+the floor is now visable
+
+expanded the testing groungs signifigantly 
+
+planning to add a sprint and wall roll that could turn into a super walljump that would replicate an old unpublished movement bug from earlier introduction of wall sliding.
+
+
+
+(ง •_•)ง
+
+
+to any of those finding this becuase of the ARG, I believe in you! 
+
+(:  <3
