@@ -1,0 +1,11 @@
+now you can wall run w/o holding W
+
+i did a bunch of field testing to make a good tutorial and this version was the third iteration 
+
+thats about it but it did take a while
+
+still need to finish the swordless movement tech and fix a minor bug where you get stuck on the edge for a few seconds after running out of energy.
+
+(: 
+
+-me, ⍟
