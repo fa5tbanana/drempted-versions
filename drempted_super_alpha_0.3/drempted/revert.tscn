@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+
+[sub_resource type="SphereMesh" id=2]
+material = SubResource( 1 )
+radius = 30.0
+height = 60.0
+
+[sub_resource type="Shader" id=3]
+
+[sub_resource type="ShaderMaterial" id=4]
+shader = SubResource( 3 )
+
+[sub_resource type="SphereShape" id=5]
+radius = 30.0
+
+[sub_resource type="Environment" id=6]
+background_mode = 1
+ambient_light_color = Color( 1, 1, 1, 1 )
+ambient_light_energy = 16.0
+
+[node name="revert" type="Spatial"]
+
+[node name="revert" type="StaticBody" parent="."]
+
+[node name="MeshInstance" type="MeshInstance" parent="revert"]
+transform = Transform( 0.999974, 0.0071907, 0, -0.0071907, 0.999974, 0, 0, 0, 1, 0, 0, 0 )
+mesh = SubResource( 2 )
+material/0 = SubResource( 4 )
+
+[node name="CollisionShape" type="CollisionShape" parent="revert"]
+shape = SubResource( 5 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 6 )

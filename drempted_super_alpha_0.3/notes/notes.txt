@@ -1,0 +1,5 @@
+I have now added wall jump cyote time and a basic double jump
+
+I also reworked the pound bounce i like it more give feed back
+
+new parts of the map
