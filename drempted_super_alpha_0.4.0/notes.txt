@@ -1,0 +1,7 @@
+fixed "ultra bounce" kinda
+
+changed double jump
+
+added coin collection wheel
+
+sex?

@@ -1,0 +1,3911 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://swordler.tscn" type="PackedScene" id=1]
+[ext_resource path="res://coin.tscn" type="PackedScene" id=2]
+[ext_resource path="res://script/fadetext.gd" type="Script" id=3]
+[ext_resource path="res://blinks.tscn" type="PackedScene" id=4]
+
+[sub_resource type="Environment" id=1]
+background_mode = 1
+background_color = Color( 1, 1, 1, 1 )
+ambient_light_color = Color( 1, 1, 1, 1 )
+ambient_light_energy = 5.25
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 9001.33, 47.9886 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 135.884, 110 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 135.533, 108.301 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 31.0024, 32 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 407.759, 408.633 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 320.654, 180.761 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 354.688, 156.346 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 122.387, 115.356 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 365.229, 105.917 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 51.1035, 112.546 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 1 )
+
+[node name="coin4" parent="." instance=ExtResource( 2 )]
+position = Vector2( -980.062, -4572.15 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1331.61, 478.182 )
+shape = SubResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D"]
+margin_top = -21.0
+margin_right = 902.0
+margin_bottom = 77.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 2243.57, 182.852 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D2"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -173.327, 540.063 )
+scale = Vector2( 58.08, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D4"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D63" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -7249.04, -2413.67 )
+scale = Vector2( 58.08, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D63"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1467.61, 729.87 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D5"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1095.25, -182.792 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D6"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1467.61, 182.852 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D17"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1467.61, 182.852 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D19"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1804.33, 347.182 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D20"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -2271.87, -182.792 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D21"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -825.526, 182.477 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D22"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D23" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -689.526, -37.1475 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D23"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D24" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1467.61, -703.137 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D24"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D25" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -611.802, -534.958 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D25"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D26" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -611.802, -534.958 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D26"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D27" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -747.802, -147.147 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D27"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D28" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1154.4, 143.076 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D28"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D29" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1467.61, -76.924 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D29"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D30" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1417.16, -335.92 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D30"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D51" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1804.33, -402.792 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D51"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D52" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1553.16, -1357.45 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D52"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D53" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1804.33, -1058.45 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D53"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D54" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -965.6, -1411.29 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D54"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D99" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -509.6, -2707.29 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D99"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D100" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -953.6, -2593.29 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D100"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D101" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -953.6, -2817.29 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D101"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D102" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -953.6, -3032.56 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D102"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D103" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -510.056, -3352.58 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D103"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D104" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -817.6, -3032.56 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D104"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D105" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -953.6, -3238.58 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D105"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D106" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -374.056, -3462.58 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D106"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D107" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1104.59, -3572.58 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D107"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D108" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1104.59, -3352.58 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D108"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D165" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -4936.84, -2593.29 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D165"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D166" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -4936.84, -3032.56 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D166"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D172" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -5364.83, -3032.56 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D172"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D220" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -5364.83, -2593.29 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D220"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D167" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -4936.84, -3238.58 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D167"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D175" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -4808.41, -3682.58 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D175"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D182" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -6141.16, -4614.97 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D182"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D183" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -6523, -4800.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D183"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D191" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -6387, -4936.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D191"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D184" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -6890.69, -4578.15 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D184"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D185" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -6659, -4910.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D185"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D193" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -6387, -5028.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D193"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D194" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -6005.16, -5252.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D194"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D197" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -4944.41, -5440.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D197"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D198" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -4307.93, -4434.83 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D198"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D218" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -4171.93, -4231.64 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D218"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D219" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -3807.45, -3743.19 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D219"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D201" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -4035.93, -4834.97 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D201"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D212" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -3671.45, -4834.97 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D212"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D213" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -3399.45, -4834.97 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D213"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D215" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -3399.45, -4834.97 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D215"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D217" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -3432.82, -3853.19 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D217"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D200" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -4672.41, -5142.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D200"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D204" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -4672.41, -5550.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D204"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D205" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -4672.41, -5770.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D205"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D186" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -7026.69, -4796.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D186"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D187" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -7026.69, -5020.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D187"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D188" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -7026.69, -5216.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D188"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D189" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -6890.69, -5326.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D189"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D169" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -4307.93, -3238.58 )
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D169"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D177" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -3393.04, -3238.58 )
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D177"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D179" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -4672.41, -4231.64 )
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D179"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D190" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -5772.61, -4936.18 )
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D190"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D195" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -5505.59, -5440.18 )
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D195"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D199" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -4075.85, -4614.97 )
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D199"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D210" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -3198.4, -5212.18 )
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D210"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D211" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -3198.4, -5212.18 )
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D211"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D203" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -3899.93, -5550.18 )
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D203"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D206" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -4171.93, -5880.18 )
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D206"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D207" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -3334.4, -5880.18 )
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D207"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D192" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -6387, -5432.18 )
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D192"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D180" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -6296.59, -4471.6 )
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D180"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D173" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -5287.24, -3792.58 )
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D173"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D170" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -3900.94, -2817.29 )
+rotation = 1.57079
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D170"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D178" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -4307.93, -3682.58 )
+rotation = 1.57079
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D178"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D202" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -3900.94, -5028.18 )
+rotation = 1.57079
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D202"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D209" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -3900.94, -5028.18 )
+rotation = 1.57079
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D209"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D208" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -2987.95, -5440.18 )
+rotation = 1.57079
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D208"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D214" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -2987.95, -4682.18 )
+rotation = 1.57079
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D214"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D216" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -3373.31, -4320.83 )
+rotation = 1.57079
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D216"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D176" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -2987.95, -3788.58 )
+rotation = 1.57079
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D176"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D171" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -5772.61, -2992.65 )
+rotation = 1.57079
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D171"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D174" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -5772.61, -3957.55 )
+rotation = 1.57079
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D174"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D181" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -5172.89, -4700.28 )
+rotation = 1.57079
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D181"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D196" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -4800.84, -5046.18 )
+rotation = 1.57079
+scale = Vector2( 3.68, 1 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D196"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D168" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -4307.93, -2593.29 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D168"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D109" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -961.526, -3682.58 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D109"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D110" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -553.526, -3792.58 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D110"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D111" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -817.6, -3902.58 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D111"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D112" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -918.677, -4012.58 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D112"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D121" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -918.677, -4231.64 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D121"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D122" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -918.677, -4434.83 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D122"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D123" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -792.207, -4614.97 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D123"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D126" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -792.207, -4614.97 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D126"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D124" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1018.4, -4724.97 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D124"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D125" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -553.526, -4504.97 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D125"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D127" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -417.526, -4231.64 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D127"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D128" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -396.207, -4614.97 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D128"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D113" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -918.677, -4936.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D113"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D114" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -918.677, -5142.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D114"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D115" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -782.677, -5252.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D115"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D116" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -656.207, -5330.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D116"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D117" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -396.207, -5330.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D117"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D118" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -124.207, -5028.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D118"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D129" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -238.056, -5440.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D129"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D130" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 197.583, -5440.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D130"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D131" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 197.583, -5660.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D131"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D132" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 71.6199, -5770.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D132"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D133" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -373.6, -5546.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D133"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D134" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -373.6, -5770.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D134"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D135" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -373.6, -5985.7 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D135"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D136" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -238.056, -6095.7 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D136"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D137" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -102.056, -6230.39 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D137"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D138" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 207.62, -5880.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D138"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D139" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 333.583, -5990.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D139"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D140" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 333.583, -5990.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D140"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D141" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 469.583, -6325.56 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D141"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D142" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 469.583, -6527.72 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D142"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D143" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 333.583, -6637.72 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D143"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D144" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 136, -6637.72 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D144"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D145" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -237.6, -6413.72 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D145"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D146" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -309.327, -6581.12 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D146"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D147" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -309.327, -6788.77 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D147"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D148" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -309.327, -7008.77 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D148"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D149" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -173.327, -7118.77 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D149"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D150" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 71.6199, -7118.77 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D150"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D151" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 233.298, -7192.5 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D151"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D152" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 469.583, -6747.72 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D152"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D153" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 1045.16, -6857.72 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D153"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D154" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 972.979, -6747.72 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D154"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D155" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 1720.98, -7192.5 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D155"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D156" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 2065.59, -6967.72 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D156"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D157" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 2243.57, -7008.77 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D157"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D158" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 2904.39, -7192.5 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D158"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D159" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 3324.1, -6581.12 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D159"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D163" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 3232.6, -6382.5 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D163"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D164" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 4584.13, -6382.5 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D164"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D160" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 3090.39, -6205.7 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D160"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D161" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 4110.21, -6382.5 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D161"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D162" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 4370.92, -6382.5 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D162"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D119" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -396.207, -5028.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D119"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D120" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -238.056, -4914.18 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D120"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D98" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 1339.31, -2300.23 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D98"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D73" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 972.979, -1069.78 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D73"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D55" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -823.25, -883.346 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D55"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D56" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -747.802, -1098.91 )
+scale = Vector2( 2.29833, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D56"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D75" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 3462.71, -1337.05 )
+scale = Vector2( 1.16655, 0.214124 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D75"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D92" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 3753.22, -1337.05 )
+scale = Vector2( 1.16655, 0.214124 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D92"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D93" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 3989.39, -1337.05 )
+scale = Vector2( 1.16655, 0.214124 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D93"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D84" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 3594.57, -1786.07 )
+scale = Vector2( 1.16655, 0.214124 )
+shape = SubResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D84"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D89" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 2554.2, -1802.62 )
+scale = Vector2( 1.16655, 0.214124 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D89"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D90" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 1567.75, -1505.81 )
+scale = Vector2( 1.16655, 0.214124 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D90"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D85" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 3232.6, -1774.86 )
+scale = Vector2( 0.606564, 0.214124 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D85"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D77" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 3629, -1132.53 )
+scale = Vector2( 3.53833, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D77"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D81" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 1720.98, -491.54 )
+scale = Vector2( 2.29833, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D81"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D79" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 3304.06, -1587 )
+scale = Vector2( 1.05833, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D79"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D86" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 3318.1, -2146.4 )
+scale = Vector2( 2.29833, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D86"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D96" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 2704.47, -2148.78 )
+scale = Vector2( 2.29833, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D96"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D87" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 2596.28, -1505.81 )
+scale = Vector2( 4.45833, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D87"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D80" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 1989.94, -1505.81 )
+scale = Vector2( 2.29833, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D80"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D97" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 1555.76, -1981.52 )
+scale = Vector2( 2.29833, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D97"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D70" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -2189.32, -948.45 )
+scale = Vector2( 2.29833, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D70"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D57" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -553.526, -944.45 )
+scale = Vector2( 2.29833, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D57"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D58" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -309.327, -585.137 )
+scale = Vector2( 2.29833, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D58"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D64" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1231.25, -972.557 )
+scale = Vector2( 2.29833, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D64"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D65" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1417.16, -699.137 )
+scale = Vector2( 2.29833, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D65"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D59" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -240.953, -445.92 )
+scale = Vector2( 2.29833, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D59"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D60" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -429.61, -147.148 )
+rotation = 1.57079
+scale = Vector2( 2.29833, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D60"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D76" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 3314.64, -1340.19 )
+rotation = 1.57079
+scale = Vector2( 0.966769, 0.203537 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D76"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D94" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 3796.64, -1152.05 )
+rotation = 1.57079
+scale = Vector2( 0.326769, 0.203537 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D94"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D95" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 3553.43, -1199.27 )
+rotation = 1.57079
+scale = Vector2( 0.326769, 0.203537 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D95"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D88" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 2417.8, -1659.9 )
+rotation = 1.57079
+scale = Vector2( 1.21963, 0.205506 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D88"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D91" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 1436.75, -1391.15 )
+rotation = 1.57079
+scale = Vector2( 0.966769, 0.203537 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D91"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D83" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 4110.22, -1225.83 )
+rotation = 1.57079
+scale = Vector2( 0.966769, 0.203537 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D83"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D78" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 3176.74, -1453.7 )
+rotation = 1.57079
+scale = Vector2( 2.29833, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D78"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D82" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 3600, -1742 )
+rotation = 1.57079
+scale = Vector2( 2.85833, 0.264657 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D82"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D74" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -225.352, 79 )
+rotation = 1.57079
+scale = Vector2( 2.29833, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D74"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D61" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -961.526, -556.008 )
+rotation = 1.57079
+scale = Vector2( 2.29833, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D61"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D66" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1104.59, -613.244 )
+rotation = 1.57079
+scale = Vector2( 0.938327, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D66"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D67" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1553.16, -993.346 )
+rotation = 1.57079
+scale = Vector2( 0.938327, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D67"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D71" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -475.802, -727.244 )
+rotation = 1.57079
+scale = Vector2( 0.938327, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D71"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D72" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -2371.4, -585.137 )
+rotation = 1.57079
+scale = Vector2( 0.938327, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D72"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D68" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1729.73, -699.137 )
+rotation = 1.57079
+scale = Vector2( 0.938327, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D68"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D69" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1990.44, -813.137 )
+rotation = 1.57079
+scale = Vector2( 0.938327, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D69"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D62" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -611.802, 461.182 )
+rotation = 1.57079
+scale = Vector2( 2.29833, 0.25552 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D62"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D31" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -2093.24, -589.137 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D31"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D33" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -2654.96, -589.137 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D33"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D34" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -3257.04, -589.137 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D34"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D35" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -3764.94, -335.92 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D35"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D37" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -3939.85, -1062.45 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D37"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D38" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -3334.4, -1172.45 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D38"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D39" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -2987.95, -1357.45 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D39"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D40" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -3509.31, -1619.81 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D40"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D41" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -3123.95, -1841.81 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D41"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D36" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -4171.93, -644.958 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D36"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D32" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -2325.32, 257.076 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D32"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1018.4, 296.852 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D18"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -2726.35, 729.87 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D7"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -1804.33, -68.7921 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D8"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 0, 33.076 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D9"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D42" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 972.979, 347.182 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D42"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D43" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 972.979, 123.076 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D43"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D44" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 972.979, -76.924 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D44"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D45" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 972.979, -292.792 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D45"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D46" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 972.979, -475.137 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D46"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D47" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 483.999, -178.792 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D47"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D48" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 1292.93, -475.137 )
+scale = Vector2( -0.909295, -8.46521 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D48"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 110.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D49" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 483.999, 123.076 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D49"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D50" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 483.999, 123.076 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D50"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -4936.84, 143.076 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D10"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -5908.61, 729.87 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D11"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -7102.63, 709.87 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D12"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -7604.53, 72.8525 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D13"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -8330.68, 709.87 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D14"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -9313.12, 123.076 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D15"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -10284.9, 709.87 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D16"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 114.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 473.031, 457.182 )
+shape = SubResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D3"]
+margin_left = -136.0
+margin_top = -110.0
+margin_right = 136.0
+margin_bottom = 21.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="swordler" parent="." instance=ExtResource( 1 )]
+position = Vector2( 4021.29, -1225.83 )
+
+[node name="Camera2D2" type="Camera2D" parent="swordler"]
+current = true
+
+[node name="timer" type="TextEdit" parent="swordler"]
+visible = false
+margin_left = 398.0
+margin_top = -280.0
+margin_right = 492.0
+margin_bottom = -242.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ball" type="RigidBody2D" parent="."]
+position = Vector2( 228.583, 128.171 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ball"]
+shape = SubResource( 5 )
+
+[node name="ColorRect" type="ColorRect" parent="ball"]
+margin_left = -31.0
+margin_top = -32.0
+margin_right = 31.0
+margin_bottom = 32.0
+color = Color( 0.27451, 0.74902, 0.894118, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="TextEdit" parent="."]
+margin_left = 3233.0
+margin_top = -1152.0
+margin_right = 3461.0
+margin_bottom = -1114.0
+text = " run in wall to wall run and press 
+ jump to wall jump"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area2D" type="Area2D" parent="TextEdit"]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextEdit/Area2D"]
+position = Vector2( -4.29224, -24.4779 )
+shape = SubResource( 6 )
+
+[node name="TextEdit2" type="TextEdit" parent="."]
+margin_left = 3901.92
+margin_top = -1343.05
+margin_right = 4087.92
+margin_bottom = -1317.05
+text = "WASD and [space] to move"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit3" type="TextEdit" parent="."]
+margin_left = 3226.35
+margin_top = -1703.24
+margin_right = 3438.35
+margin_bottom = -1666.24
+text = "press S while running to slide
+and then jump to flip"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area2D" type="Area2D" parent="TextEdit3"]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextEdit3/Area2D"]
+position = Vector2( -237, -241 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TextEdit3/Area2D"]
+position = Vector2( -430.78, 23.776 )
+shape = SubResource( 8 )
+
+[node name="TextEdit5" type="TextEdit" parent="."]
+margin_left = 2904.0
+margin_top = -1713.0
+margin_right = 3110.0
+margin_bottom = -1637.0
+text = " ground pound with S + space
+ while in air keep holding
+ for ground hop combo
+ again into super bounce"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area2D" type="Area2D" parent="TextEdit5"]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextEdit5/Area2D"]
+position = Vector2( 402.1, 33.536 )
+shape = SubResource( 9 )
+
+[node name="coin11" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3318.1, -1179.78 )
+
+[node name="coin12" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3312.1, -1527.64 )
+
+[node name="coin16" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3426.4, -1632.41 )
+
+[node name="coin17" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3290.78, -1809.62 )
+
+[node name="coin18" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2832.66, -1833.17 )
+
+[node name="coin20" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3150.11, -1841.81 )
+
+[node name="coin19" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2682.87, -1847.81 )
+
+[node name="coin13" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3226.6, -1337.05 )
+
+[node name="TextEdit4" type="TextEdit" parent="."]
+margin_left = 2476.1
+margin_top = -1684.04
+margin_right = 2682.1
+margin_bottom = -1606.04
+text = " pressing jump while
+ flipping will allow you to 
+ cover more distance"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area2D" type="Area2D" parent="TextEdit4"]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TextEdit4/Area2D"]
+position = Vector2( 307.568, 45.6301 )
+shape = SubResource( 10 )
+
+[node name="coin" parent="." instance=ExtResource( 2 )]
+position = Vector2( -3128.32, -1998.85 )
+
+[node name="coin2" parent="." instance=ExtResource( 2 )]
+position = Vector2( -890.832, 41.796 )
+
+[node name="coin3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1136.21, 394.692 )
+
+[node name="parkour start" type="Position2D" parent="."]
+position = Vector2( -4307.93, -2817.29 )
+
+[node name="finishline" type="Area2D" parent="."]
+position = Vector2( -3535.45, -4614.97 )
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="finishline"]
+shape = SubResource( 11 )
+
+[node name="ColorRect" type="ColorRect" parent="finishline"]
+margin_left = -40.0
+margin_top = 102.0
+margin_right = 48.0
+margin_bottom = 114.0
+color = Color( 0.305882, 0.909804, 0.0862745, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit6" type="TextEdit" parent="."]
+margin_left = -986.0
+margin_top = -1587.0
+margin_right = -946.0
+margin_bottom = -1564.0
+text = "  \"P\""
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit7" type="TextEdit" parent="."]
+margin_left = 1475.0
+margin_top = -1576.0
+margin_right = 1548.0
+margin_bottom = -1536.0
+text = " <-------
+ straight"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit8" type="TextEdit" parent="."]
+margin_left = -974.062
+margin_top = 296.852
+margin_right = -901.062
+margin_bottom = 336.852
+rect_rotation = 89.9999
+text = " <-------
+ straight"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit9" type="TextEdit" parent="."]
+margin_left = 909.16
+margin_top = 347.182
+margin_right = 982.16
+margin_bottom = 387.182
+rect_rotation = 44.9999
+text = " <-------
+ straight"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="blinks" parent="." instance=ExtResource( 4 )]
+visible = false
+
+[node name="coin5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 4370.92, -6633.72 )
+
+[node name="TextEdit10" type="TextEdit" parent="."]
+margin_left = -6523.0
+margin_top = -2703.29
+margin_right = -6483.0
+margin_bottom = -2663.29
+text = " sex"
+__meta__ = {
+"_edit_use_anchors_": false
+}
