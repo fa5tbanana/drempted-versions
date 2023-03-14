@@ -1,0 +1,7 @@
+fixed a bunch of inconsistencies and bugs
+
+added enemy (no ai yet)
+
+a new easter egg
+
+and "E" does somthing now (the ring will be stamina for cool time slow)

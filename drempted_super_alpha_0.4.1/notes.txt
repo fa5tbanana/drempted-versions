@@ -1,0 +1,3 @@
+fixed the thing where you groundpound REALLY HIGH
+
+made jumping off walls kill you're energy
